@@ -1,0 +1,13 @@
+:root{
+    --text:     #000000;
+    --smoke:    #EFEFEA;
+    --light:    #FFFFFF;
+    --normale:  #3A485E ;
+    --dark:     #303A4D;
+    --accent:   #FAE496;
+    
+    --hover:    transparent;
+    --button:   transparent;
+    --trans:    transparent;
+    --btn-txt:  transparent;
+}

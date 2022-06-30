@@ -1,0 +1,26 @@
+:root{
+    --text:     #FEDE60;
+    --overlay:  white;
+    --smoke:    #171520;
+    --light:    #242A45;
+    --normale:  #262335;
+    --dark:     #241B2F;
+    --accent:   #4DC1B0;
+    
+    --hover:  transparent;
+    --button: transparent;
+    --trans:    #FEDE60;
+    --btn-txt:  #4DC1B0;
+    --mail-txt: #4DC1B0;
+    --prodBack: #171520;
+    --pBorder:  #4DC1B0;
+    
+    --coffee:   url('../../image/coffeeTokyo.svg');
+    --navi:     url('../../image/menuTokyo.svg');
+    --home:     url('../../image/homeTokyo.svg');
+    --about:    url('../../image/aboutTokyo.svg');
+    --product:  url('../../image/productTokyo.svg');
+    --contact:  url('../../image/contactTokyo.svg');
+    --prodOne:  url('../../image/prodOneTokyo.svg');
+    --noProd:   url('../image/noProd.svg');
+}

@@ -1,0 +1,208 @@
+html, body {
+    height: 100%;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+/*-----------------------------page lay-out--------------------------------*/
+.main-aboutBox{
+    position: relative;
+    width: 100vw;
+    height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftBig-box {
+    width: 15vw;
+    height: 100%;
+}
+.left-box {
+    position: fixed;
+    background-image: linear-gradient(90deg, var(--dark) 95%, var(--accent) 95%);
+    width: 15vw;
+    height: 100%;
+}
+.right-box {
+    width: 85vw;
+    height: 80%;
+    margin-top: -17%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+/*-------------------------text boxes column divider--------------------------*/
+.boxOne {
+    width: 20%;
+    height: 25%;
+    margin-right: 2.5%;
+    margin-top: 2em;
+    text-align: center;
+}
+.boxTwo {
+    position: relative;
+    padding-left: 4em;
+    width: 49%;
+    height: 25%;
+    margin-top: 2em;
+}
+.boxAlg {
+    padding: 1em 4em;
+    padding-bottom: 2em;
+    position: relative;
+    width: 68.5%;
+    margin: 1em;
+    margin-bottom: 0;
+}
+.boxOne, .boxTwo, .boxAlg, .span {
+    background-color: var(--light);
+    border-radius: 1em;
+}
+/*------------------------------text size */
+.boxTwo h1 {margin: .5em auto; font-size: 4em; color: var(--text); font-family: var(--font);}
+.boxTwo hr {width: 70%; border: 1px solid var(--text);}
+.boxTwo p {margin: .5em auto; padding-right: 1.5em; font-size: 1.2em; color: var(--text); font-family: var(--font);}
+
+.boxAlg h1 {margin: .5em auto; font-size: 4em; color: var(--text); font-family: var(--font);}
+.boxAlg h2 {margin: 0 auto; font-size: 1.5em; font: bold; color: var(--text); font-family: var(--font);}
+.boxAlg hr {width: 70%; border: 1px solid var(--text); margin: 2em auto;}
+.boxAlg p {margin: 0 auto; font-size: 1.2em; color: var(--text); font-family: var(--font);}
+
+.Exp {
+    display: grid;
+    margin-top: 1em;
+    grid-gap: .1em;
+    grid-template-columns: 15% 5% 60%;
+    color: black;
+    height: 100%;
+}
+.ExpItem {
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+/*---------------------dropdown menu for work experience--------------------------*/
+.center{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+ }
+.down, .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.down {
+    width: 5%;
+    font-size: 2em;
+}
+.middle {
+    width: 90%;
+    font-size: 1.5em;
+}
+
+.txt-column {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 29% 5% 65%;
+    color: var(--btn-txt);
+    height: 100%;
+}
+.item {
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 1em;
+}
+.a{grid-column: 1; text-align: center;}
+.b{grid-column: 2;}
+.c{grid-column: 3;}
+
+.r2{grid-row: 2 ;}
+.r3{grid-row: 3 ;}
+.r4{grid-row: 4 ;}
+.r5{grid-row: 5 ;}
+.r6{grid-row: 6 ;}
+/*-------------------------drop down navigation--------------------------*/
+.nav {
+    width: 75%;
+    margin: 1em;
+}
+  
+.span {
+    cursor : pointer;
+    display: block;
+    height: auto;
+}
+  
+.slide {
+      clear:both;
+      width:100%;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+      background-color: var(--dark);
+      margin-top: 1%;
+      margin-bottom: 2%;
+      border-radius: 20px;
+}
+  
+.slide p {padding :20px; padding-left: 35px;}
+  
+  #touch {position: absolute; opacity: 0; height: 0px;}
+
+  #touch:checked + .slide {height: 30em;}
+  
+/*---------------------------------------- media screens page sizing ------------------------------------*/
+
+@media only screen and (max-width: 1200px){
+    .Exp {grid-template-columns: 25% 5% 60%;}
+    .ExpItem {text-align: left;}
+}
+@media only screen and (max-width: 1000px){
+    .boxTwo h1 {font-size: 2.5em;} 
+    .boxTwo p {font-size: 1em; margin: 1em auto;}
+
+    .boxAlg h1 {font-size: 2.5em;}
+    .boxAlg h2 {font-size: 1.2em;}
+    .boxAlg p  {font-size: 1em;}
+
+    .ExpItem {font-size: 1em; padding: .1em;}
+}
+@media only screen and (max-width: 1000px){
+    .down {font-size: 1em;}
+    .middle {font-size: 1.5em;}
+
+    .nav{ width: 80%;}
+    .item {font-size: 1em;}
+
+    .txt-column {grid-template-columns: 29% 5% 60%;}
+    #touch:checked + .slide {height: 31em;}
+}
+@media only screen and (max-width: 700px){
+    .down {font-size: 1em;}
+    .middle {font-size: 1.5em;}
+
+    .nav{ width: 90%;}
+    .item {font-size: .8em;}
+
+    .txt-column {grid-template-columns: 29% 5% 60%;}
+    #touch:checked + .slide {height: 31em;}
+}
+
+@media only screen and (max-width: 600px){
+    .boxOne {width: 50%; margin-top: -15%;}
+
+    .boxTwo {width: 80%; height: 20%; padding-left: 2em;}
+    .boxTwo h1 {font-size: 2em;} 
+    .boxTwo p {font-size: .8em; margin: 1em auto;}
+
+    .boxAlg {padding-left: 2em;}
+    .boxAlg h1 {font-size: 2em;}
+    .boxAlg h2 {font-size: 1em;}
+    .boxAlg p  {font-size: .8em;}
+
+    .ExpItem {font-size: .8em; padding: .1em;}
+}

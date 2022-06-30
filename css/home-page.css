@@ -1,0 +1,133 @@
+/*----------------------------------image classes--------------------------------------*/
+
+.coffee-icon {
+    background-image: var(--coffee);
+    background-repeat: no-repeat;
+    height: 35em;
+    width: 35em;
+    cursor: pointer;
+    margin: auto auto;
+    animation: fade-in 1.5s 2s ease-in forwards;
+    transform: scale(0);
+    z-index: 1;
+}
+.home-page {
+    position: absolute;
+    background-color: var(--dark);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    animation: slide-open 2s ease-in;
+    animation-delay: 0s;
+}
+.back {
+    margin: 2em auto;
+    background-color: var(--normale);
+    height: 80%;
+    width: 100%;
+    position: relative;
+    transform: skewY(175deg);
+    animation: closeOne 2s ease-in-out;
+}
+
+/*--------------------------------menu dropdown navigation-------------------------------*/
+
+.navi-burger{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 3vw;
+    z-index: 2;
+}
+.menu-blok {
+    left: 0;
+}
+
+.menu {
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    z-index: 1;
+    background-image: var(--navi);
+    background-repeat: no-repeat; 
+    justify-content: center;
+    z-index: 2;
+}
+.menu-drop {
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: auto;
+    clear:both;
+    width:5vw;
+    height: 0px;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+}
+.sizingHome {margin: 4em 4em;}
+.sizing {margin: 3em 3em;}
+
+
+#click {position: absolute; opacity: 0; height: 0px;}
+#click:checked + .menu-drop {height: 35em; z-index: 2;}
+
+.menu-item {
+    width: 3em;
+    cursor: pointer;
+    background-repeat: no-repeat; 
+    justify-content: center;
+}
+
+.m1{grid-row: 2 ; background-image: var(--home);}
+.m2{grid-row: 3 ; background-image: var(--about);}
+.m3{grid-row: 4 ; background-image: var(--product);}
+.m4{grid-row: 5 ; background-image: var(--contact);}
+
+
+/*---------------------------mobile friendly-----------------------------*/
+
+@media only screen and (max-width: 1700px){
+    .coffee-icon { height: 30em; width: 30em;}
+}
+
+@media only screen and (max-width: 1000px){
+    .nav    {width: 6vw;}
+    .menu {width: 2em; height: 2em;}
+    .menu-item {width: 2em;}
+
+    .sizingHome {margin: 2em 2em;}
+    
+    #click:checked + .menu-drop {height: 25em; z-index: 2;}
+}
+
+@media only screen and (max-width: 600px){
+    .coffee-icon { height: 20em; width: 20em;}
+
+    .nav    {width: 6vw;}
+    .menu {width: 1.5em; height: 1.5em;}
+    .menu-item {width: 1.5em;}
+
+    .sizingHome {margin: 4em 2em;}
+    .sizing {margin: 2em 2em;}
+    #click:checked + .menu-drop {height: 20em; z-index: 2;}
+}
+
+@media only screen and (max-width: 450px){
+    .sizing {margin: 1em 1em;}
+    .sizingHome {margin: 2em 1.5em;}
+    .menu-drop {width: 7vw;}
+    #click:checked + .menu-drop {height: 16em; z-index: 2;}
+    .menu-item {width: 2em;}
+}
+
+@media only screen and (max-width: 350px){
+    .coffee-icon { height: 15em; width: 15em; }
+}
+

@@ -1,0 +1,232 @@
+/*-----------------------selected product page-----------------------*/
+.main-productBox {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.position {
+    top: 0;
+    left: 0;
+}
+.Bigright-box {
+    width: 85vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.grid-cont {
+    display: grid;
+    margin-top: 3em;
+    width: 90%;
+    height: 90vh;
+    grid-gap: 3em;
+    grid-template-columns: auto auto auto auto auto;
+    color: var(--text);
+}
+
+/*--------------------------text boxes--------------------------*/
+.prodItem {
+    font-size: 1.2em;
+    padding-bottom: 2em;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--light);
+    color: var(--text);
+    font-family: var(--font);
+}
+.prodItem h1 {font-size: 3em; margin: 0; padding-top: 1.5em;}
+.prodItem h2 {font-size: 2em; margin: 0; padding: 1em;}
+.prodItem h3 {font-size: 2em; margin: 0;}
+.prodItem hr {width: 80%;}
+.prodItem p {font-size: 2em; margin: 0; padding: 4em; padding-top: .5em; padding-bottom: .5em; text-align: left;}
+.prodItem li {font-size: 1.5em; text-align: left; padding-left: 7em;}
+
+.p1 {grid-column: 2/5; grid-row: 2;}
+.p2 {grid-column: 2/5; grid-row: 3/6;}
+
+.pBtn{
+    grid-column: 3/4; 
+    grid-row: 6; 
+    height: 5em;
+    background-color: var(--dark);
+    color: var(--btn-txt);
+    transition: .5s ease;
+    padding: 2em;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+
+.pBtn:hover {background-color: var(--accent); color: var(--text);}
+
+
+/*--------------------carousel lay-out-------------------*/
+.products input {
+    display: none;
+}
+.slide-blok {
+    margin-top: 4em;
+    width: 75vw;
+    height: 70vh;
+    overflow: hidden;
+}
+.carousel {
+    margin-left: 0;
+    width: 166.5%;
+    height: 100%;
+    display: flex;
+    transition: .5s;
+}
+.visible {
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.control ul {
+    position: absolute;
+    bottom: 5%;
+    left: 49%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+}
+
+.control li {
+    width: 3em;
+    height: 2em;
+    border:2px solid var(--accent);
+    background-color: transparent;
+    border-radius: .7em;
+    transition: .3s all;
+}
+.control li:not(:last-child) {margin-right: 1em;}
+.control ul li.selected {background-color: var(--accent);}
+
+.row1 {display: block;}
+.row2 {display: none;}
+.row3 {display: none;}
+
+/*-----------------------image placeholder lay-out---------------------*/
+.cube {
+    border: 1px solid var(--pBorder);
+    margin: 1em auto;
+    border-radius: 2em;
+    width: 80%;
+    height: 95%;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px black;
+}
+.image {
+    position: relative;
+    height: 85%;
+    width: 100%;
+    text-align: center;
+    
+}
+.txt-cube {
+    position: relative;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--light);
+}
+
+.overlay {
+    position: absolute;
+    cursor: pointer; 
+    background: rgba(0, 0, 0, 0.644);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: var(--light);
+    font-size: 20px;
+    padding-top: 40px;
+  }
+.image:hover .overlay{
+    opacity: 1;
+}
+/*------------------text sizing and placement---------------------*/
+.txt-cube h3 {
+    margin: 0;
+    font-size: 2em;
+    padding: 1em;
+    color: var(--text);
+    font-family: var(--font);
+}
+.overlay p {
+    margin: 0;
+    padding: 1em;
+    padding-top: 3em;
+    font-size: 1.5em;
+    font-family: var(--font);
+    color: var(--overlay);
+}
+/*------------------color test---------------------*/
+
+.c1 {background-image: var(--prodOne); background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.c2 {background-color: var(--prodBack);}
+
+
+/*----------------------------------------media screens page sizing------------------------------------*/
+
+@media only screen and (max-width: 1300px){
+    .carousel {width: 250%;}
+    .row1 {display: none;}
+    .row2 {display: block;}
+    .prodItem h3    {font-size: 1.5xem;}
+}
+
+@media only screen and (max-width: 950px){
+    .carousel {width: 530%;}
+    .control li {
+        width: 2em;
+        height: 1.5em;
+    }
+    .row1 {display: none;}
+    .row2 {display: none;}
+    .row3 {display: block;}
+
+    .prodItem h1    {font-size: 2em;}
+    .prodItem h2    {font-size: 1.5em;}
+    .prodItem h3    {font-size: 1.3em;}
+    .prodItem p     {font-size: 1.2em;}
+    .prodItem li    {font-size: 1em;}
+}
+
+@media only screen and (max-width: 600px) {
+    .prodItem h1    {font-size: 1.5em;}
+    .prodItem h2    {font-size: 1.3em;}
+    .prodItem h3    {font-size: 1em;}
+    .prodItem p     {font-size: 1.1em; padding: 2em; padding-bottom: 0; padding-top: 1em;}
+    .prodItem li    {font-size: .9em; padding-left: 3em; margin: 1em;}
+}
+
+@media only screen and (max-width: 450px){
+    .control li {
+        width: 1.6em;
+        height: 1em;
+    }
+    .control li:not(:last-child) {margin-right: .5em;}
+    .txt-cube h3 {
+        font-size: 1.5em;
+        padding: 1.4em;
+    }
+    .overlay p {
+        font-size: 1em;
+    }
+
+    .prodItem h1    {font-size: 1.5em;}
+    .prodItem h2    {font-size: 1.3em;}
+    .prodItem h3    {font-size: .8em;}
+    .prodItem p     {font-size: .8em; padding: 2em; padding-bottom: 0; padding-top: 1em;}
+    .prodItem li    {font-size: .7em; padding-left: 3em; margin: 1em;}
+}

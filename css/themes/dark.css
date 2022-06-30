@@ -1,0 +1,26 @@
+:root{
+    --text:     #FFFFFF;
+    --overlay:  #FFFFFF;
+    --smoke:    #414141;
+    --light:    #141414;
+    --normale:  #242323 ;
+    --dark:     #141414;
+    --accent:   #E51A1A;
+    
+    --hover:    #9c0404;
+    --button:   #E51A1A;
+    --trans:    transparent;
+    --btn-txt:  #EFEFEA;
+    --mail-txt: #EFEFEA;
+    --prodBack: #242323;
+    --pBorder:  #E51A1A;
+
+    --coffee:   url('../../image/coffeeDark.svg');
+    --navi:     url('../../image/menuDark.svg');
+    --home:     url('../../image/homeDark.svg');
+    --about:    url('../../image/aboutDark.svg');
+    --product:  url('../../image/productDark.svg');
+    --contact:  url('../../image/contactDark.svg');
+    --prodOne:  url('../../image/prodOneDark.svg');
+    --noProd:   url('../image/noProd.svg');
+}

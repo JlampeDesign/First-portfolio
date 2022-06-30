@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------------------linked files---------------------------------->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/mail.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" id="colorSwitch" href="">
+    <title>HomePage</title>
+</head>
+<body>
+
+    <div class="main_blok">
+    <!--------------------------------dropdown navigation------------------------------->
+      <div class="navi-burger">
+
+        <div class="menu-blok">
+          <label for="click">
+              <div class="menu drop-shadow sizingHome"></div>
+          </label>
+        </div>
+
+        <input type="checkbox" id="click">
+          <div class="menu-drop sizingHome">
+              <a href="#home" class="menu-item m1 drop-shadow"></a>
+              <a href="#about" class="menu-item m2 drop-shadow"></a>
+              <a href="#products" class="menu-item m3 drop-shadow"></a>
+              <a href="#contact" class="menu-item m4 drop-shadow"></a>
+          </div>
+
+      </div>
+      <!--------------------------------home page------------------------------->
+      <section class="downOne" id="home">
+        <div class="home-blok">
+
+          <div class="coffee-icon" onclick="themePicker ()"></div>
+
+          <div class="home-page">  
+            <div class="back"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--------------------------------about page------------------------------->  
+
+      <section class="downTwo" id="about">
+        <div class="about">
+            <div class="dest-line drop-shadow"></div>
+            <div class="txt-about drop-shadow">
+              <h1>Hello, my name is Job</h1>
+              <p>I'm a first year ICT student at the HU University of Applied Sciences. My passions lie with sculptural and graphical design but also with technology, specificly robotics and AI.</p>
+              <p>Before I became an ICT student I studied Build Enviroment at the HAN for 2 years, so I'm also familiar with architectural designing and 3D modeling software.</p>
+              <p>I like learning new interesting things and do not often settle for the first idea that comes to mind. This often leads to a-typical but creative products or solutions.</p>
+              <p>If you want to know more about me you can click te button, but if you're ready for your own A-typical product than keep on scrolling.</p>
+              <div class="mrgnTop">
+              <a href="/html/about.html" class="aboutBTN">I dare you to click me!</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!--------------------------------product page------------------------------->
+
+      <section class="downThree" id="products">
+        <div class="products">
+    
+            <div class="dest-line drop-shadow"></div>
+
+            <div class="slide-blok">
+                <div class="carousel">
+
+                    <div class="visible">
+                        <div class="cube">
+                          <a href="html/products.html">
+                            <div class="image c1">
+                                <div class="overlay">
+                                  <p>By clicking on this product you'll find the different languages used for website as well as their functions.</p>
+                                </div>
+                            </div>
+                          </a>
+                          <div class="txt-cube">
+                            <h3>Portfolio Site</h3>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="visible">
+                      <div class="cube">
+                        <div class="image c2">
+                            <div class="overlay">
+                              <p>product in process</p>
+                            </div>
+                        </div>
+                        <div class="txt-cube">
+                          <h3>no product</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="visible">
+                      <div class="cube">
+                        <div class="image c2">
+                            <div class="overlay">
+                              <p>product in process</p>
+                            </div>
+                        </div>
+                        <div class="txt-cube">
+                          <h3>no product</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="visible">
+                      <div class="cube">
+                        <div class="image c2">
+                            <div class="overlay">
+                              <p>product in process</p>
+                            </div>
+                        </div>
+                        <div class="txt-cube">
+                          <h3>no product</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="visible">
+                      <div class="cube">
+                        <div class="image c2">
+                            <div class="overlay">
+                              <p>product in process</p>
+                            </div>
+                        </div>
+                        <div class="txt-cube">
+                          <h3>no product</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+
+                <div class="control">
+                  <div class="row1">
+                    <ul>
+                      <li class="selected"></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+
+                  <div class="row2">
+                    <ul>
+                      <li class="selected"></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+
+                  <div class="row3">
+                    <ul>
+                      <li class="selected"></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--------------------------------contact/mail page-------------------------------> 
+        
+      <section class="downFour" id="contact">
+        <div class="mail">
+            <div class="dest-line drop-shadow"></div>
+            <div class="txt-mail drop-shadow">
+                <form action="https://formsubmit.co/jlampe.designs@gmail.com" method="POST">
+            
+                    <input type="hidden" name="_subject" value="EYYYY! you've got another email">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/thanks.html">
+          
+                    <div class="form-group">
+                      <input type="text" name="firstName" placeholder="First name" required>
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="text" name="lastName" placeholder="Last name" required>
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="email" name="email" placeholder="Email address" required>
+                    </div>
+                
+                    <div class="form-border">
+                      <textarea type="text" name="message" placeholder="Write your message here" required cols="30" rows="10"></textarea>
+                    </div>
+          
+                    <div class="button" type="submit">Send message</div>
+                    
+                  </form>
+            </div>
+        </div>
+      </section>
+
+      <!------------------------------------------copyright footer------------------------------------>
+
+      <footer>© 2021-2026 Job Lampe All Rights Reserved</footer>
+
+      </div>
+
+    </div>
+    <!--------------------------------------gebruikte js files----------------------------------------->
+    <script src="js/themes.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
+
